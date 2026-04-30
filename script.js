@@ -13,26 +13,6 @@ window.addEventListener('load', () => {
 });
 document.body.style.overflow = 'hidden';
 
-// CURSOR
-const cursor         = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
-let mouseX = 0, mouseY = 0, followX = 0, followY = 0;
-
-if (cursor && cursorFollower) {
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top  = mouseY + 'px';
-  });
-  function animateCursor() {
-    followX += (mouseX - followX) * 0.12;
-    followY += (mouseY - followY) * 0.12;
-    cursorFollower.style.left = followX + 'px';
-    cursorFollower.style.top  = followY + 'px';
-    requestAnimationFrame(animateCursor);
-  }
-  animateCursor();
-}
 
 // NAVBAR
 const navbar    = document.getElementById('navbar');
