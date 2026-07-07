@@ -772,7 +772,7 @@ section    { padding:100px 0; }
 }
 
 /* Hide broken image alt text */
-img[src="./assets/new_profile.jpg"] {
+img[src="./assets/profile.jpg"] {
   color: transparent;
   font-size: 0;
 }
