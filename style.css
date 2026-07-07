@@ -772,8 +772,7 @@ section    { padding:100px 0; }
 }
 
 /* Hide broken image alt text */
-img:-moz-broken { opacity: 0; }
-img[src="assets/profile.jpg"] {
+img[src="./assets/new_profile.jpg"] {
   color: transparent;
   font-size: 0;
 }
